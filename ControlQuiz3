@@ -1,0 +1,8 @@
+#1~100000 피보나치수 출력 (1 1 2 3 5 8 13 21 앞의 두숫자)
+temp=[0,0]
+num=1
+while num<100000:
+    print(num)
+    temp[0]=temp[1]
+    temp[1]=num
+    num=temp[0]+temp[1]
