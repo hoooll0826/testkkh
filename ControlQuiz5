@@ -1,0 +1,13 @@
+#1~100000 369게임 , 668->짝짝
+num=1
+num_cip=0 #각 자릿수의 집합
+times=0
+while num<100000:
+  num_cip=str(num) #num을 자릿수별로 쪼개기
+  times=num_cip.count('3')+num_cip.count('6')+num_cip.count('9')
+  if times==0:
+    print(num)
+  else:
+    print("짝"*times)
+    times=0
+  num=num+1

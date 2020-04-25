@@ -1,0 +1,13 @@
+#1~100000 소수 출력
+num=1
+
+while num<=100000:
+  temp=1
+  while temp<=num:
+    temp=temp+1
+    if num%temp==0:
+      if num==temp:
+        print(num)
+      else:
+        break
+  num=num+1
