@@ -1,0 +1,5 @@
+def motorangle(sensorinput):
+  angle = sensorinput*180
+  return angle
+
+print(motorangle(0.5))
